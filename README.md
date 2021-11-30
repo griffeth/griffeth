@@ -1,6 +1,6 @@
 Hi there 👋
 
-💻 currently implementing ISO 27001 at GitHub
+💻 currently implementing ISO 27001 [@github](https://github.com/github)
  
 🎧
 
