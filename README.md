@@ -1,4 +1,4 @@
-Hi there 👋
+Hello there 👋
 
 🏁 I work on audit and compliance [@github](https://github.com/github) - see [GitHub.com/Security](https://github.com/security)
 
