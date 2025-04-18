@@ -20,18 +20,35 @@
             padding: 30px;
             background-color: var(--background-light);
             border-radius: 15px;
-            border-left: 3px solid var(--primary);
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             border: 1px solid var(--background-medium);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .goals-list li::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary), var(--secondary));
         }
         .goals-list li:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px) translateX(5px);
+            box-shadow: 0 15px 30px rgba(110, 86, 207, 0.2);
         }
         .goals-list h3 {
             color: var(--text-dark);
             margin-bottom: 15px;
             font-weight: 600;
             font-size: 1.3rem;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
         }
         .goals-list p {
             color: var(--text-medium);
@@ -52,7 +69,7 @@
             position: absolute;
             width: 60px;
             height: 2px;
-            background-color: var(--primary);
+            background: linear-gradient(to right, var(--primary), var(--secondary));
             bottom: -1px;
             left: 0;
         }
@@ -126,5 +143,8 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/mobile-nav.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>
