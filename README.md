@@ -12,7 +12,7 @@ This is a simple portfolio website that serves as a foundation for showcasing my
 
 ## Viewing the Website
 
-You can view the website by visiting [https://griffeth.github.io/brandon-griffeth/](https://griffeth.github.io/brandon-griffeth/)
+You can view the website by visiting [https://griffeth.github.io/griffeth/](https://griffeth.github.io/griffeth/)
 
 ## Development
 
