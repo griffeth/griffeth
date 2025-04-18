@@ -4,32 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Goals - Brandon Griffeth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         .goals-list {
             list-style-type: none;
             padding: 0;
-            margin: 20px 0;
+            margin: 25px 0;
         }
         .goals-list li {
-            margin-bottom: 15px;
-            padding: 15px;
-            background-color: #ecf0f1;
-            border-radius: 5px;
-            border-left: 4px solid #2c3e50;
+            margin-bottom: 20px;
+            padding: 25px;
+            background-color: #f7fafc;
+            border-radius: 10px;
+            border-left: 4px solid #3182ce;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        .goals-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
         }
         .goals-list h3 {
-            color: #2c3e50;
-            margin-bottom: 10px;
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+        .goals-list p {
+            color: #4a5568;
+            line-height: 1.7;
         }
         .goal-category {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         .goal-category h2 {
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            position: relative;
+            display: inline-block;
+        }
+        .goal-category h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: #3182ce;
+            bottom: -2px;
+            left: 0;
         }
     </style>
 </head>
