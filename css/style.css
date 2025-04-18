@@ -22,7 +22,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none; /* Hide default cursor for custom cursor */
+    cursor: default; /* Explicitly set default cursor for all elements */
 }
 
 body {
@@ -32,6 +32,10 @@ body {
     background-color: var(--background-dark);
     transition: background-color 0.3s ease;
     overflow-x: hidden;
+}
+
+a, button, input[type="submit"], .resume-button, .portfolio-item {
+    cursor: pointer;
 }
 
 /* Custom cursor styles */
@@ -143,6 +147,7 @@ body {
     transition: all 0.3s ease;
     position: relative;
     padding-bottom: 5px;
+    cursor: pointer;
 }
 
 .nav-links a::after {

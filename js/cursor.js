@@ -1,5 +1,11 @@
 // Custom cursor implementation
 document.addEventListener('DOMContentLoaded', function() {
+    // Only enable custom cursor if user explicitly chooses to
+    // This ensures the site is usable by default with the normal cursor
+    const useCustomCursor = false; // Set to true to enable custom cursor
+    
+    if (!useCustomCursor) return;
+    
     // Create cursor elements
     const cursor = document.createElement('div');
     const cursorDot = document.createElement('div');
