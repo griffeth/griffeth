@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <!-- Background circle with dark background color -->
+    <circle cx="50" cy="50" r="45" fill="#121212" />
+    
+    <!-- Add subtle glow effect -->
+    <circle cx="50" cy="50" r="42" fill="url(#glowGradient)" opacity="0.2" />
+    
+    <!-- BDG text with gradient -->
+    <g>
+        <text x="50" y="62" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle" fill="url(#textGradient)">BDG</text>
+    </g>
+    
+    <!-- Gradient definitions -->
+    <defs>
+        <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#6E56CF" /> <!-- Primary color -->
+            <stop offset="100%" stop-color="#3AD6FC" /> <!-- Secondary color -->
+        </linearGradient>
+        
+        <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#6E56CF" stop-opacity="0.8" />
+            <stop offset="100%" stop-color="#3AD6FC" stop-opacity="0" />
+        </radialGradient>
+    </defs>
+</svg>
